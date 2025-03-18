@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <section class="container">
+      <header class="header">
+        <h1>오늘의 할일</h1>
+      </header>
+
+      <div class="progress-container">
+        <p>
+          완료: <span id="completed-count">0</span> / 총
+          <span id="total-count">0</span>
+        </p>
+        <progress id="progress-bar"></progress>
+      </div>
+
+      <ul class="items"></ul>
+      <footer class="footer">
+        <input type="text" class="footer_input" />
+        <div class="btn-group">
+          <i class="fa-solid fa-plus"></i>
+          <i class="fa-solid fa-skull"></i>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
